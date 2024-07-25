@@ -1,59 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Document</title>
-</head>
-<body>
+<?php
 
-    <h1>Recommended Books</h1>
-    <?php
-        $books = [
-            [
-                "name" => "How to plant a church",
-                "author" => "Bishop Dag-heward Mills",
-                "releaseYear" => 2002,
-                "purchaseUrl" => "http://example.com"
-                
-            ],
-            [
-                "name" => "Offences",
-                "author" => "Dr.Lawrence Tetteh",
-                "releaseYear" => 1945,
-                "purchaseUrl" => "http://example.com",
-            ],
-            [
-                "name" => "The Martian",
-                "author" => "Andy Weir",
-                "releaseYear" => 2011,
-                "purchaseUrl" => "http://example.com"
-            ]
-        ];
+require 'functions.php';
 
-        function filter($items, $fn) {
-            $filtered = [];
+require 'Database.php';
 
-            foreach ($items as $items) {
-                if($fn($items)) {
-                    $filtered[] = $items;
-                }
-            }
-            return $filtered;
-        }
-        $filteredBooks = array_filter($books, function ($book){
-            return $book['author'] === 'Andy Weir';
-        });
-       
-        
-    ?>
-    <ul>
-        <?php foreach ($filteredBooks as $book): ?>
-            <li>
-                <a href="<?=($book['purchaseUrl']) ?>">
-                    <?= ($book['name']); ?> (<?= ($book['releaseYear']) ?>) - BY <?= ($book['author']) ?>
-                </a>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-    
-</body>
-</html>
+require 'router.php';
+
+// Connect to the database, and execute a query
+
+
+
+
+
+// Connect to our MySQL database.
+
+
+
+// foreach ($posts as $post) {
+//     echo "<li>" . $post['title'] . "</li>";
+// }

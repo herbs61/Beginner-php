@@ -1,21 +1,18 @@
+<?php require('partials/head.php') ?>
+<?php require('partials/nav.php') ?>
+  
+<?php require('partials/banner.php') ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Document</title>
-</head>
-<body>
 
-<ul>
-        <?php foreach ($filteredBooks as $book): ?>
-            <li>
-                <a href="<?=($book['purchaseUrl']) ?>">
-                    <?= ($book['name']); ?> (<?= ($book['releaseYear']) ?>) - BY <?= ($book['author']) ?>
-                </a>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-    
-</body>
-</html>
+  <main>
+    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+     <p>Hello. Welcome to the home page</p>
+    </div>
+  </main>
+</div>
+
+<?php require('partials/footer.php') ?>
+
+
+
