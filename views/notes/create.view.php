@@ -1,8 +1,8 @@
-<?php require('views/partials/head.php') ?>
+<?php require base_path('views/partials/head.php') ?>
 
-<?php require('views/partials/nav.php') ?>
+<?php require base_path('views/partials/nav.php') ?>
 
-<?php require('views/partials/banner.php') ?>
+<?php require base_path('views/partials/banner.php') ?>
 
   
   <main>
@@ -21,7 +21,7 @@
   }
   ```
 -->
-<form method="POST">
+<form method="POST" action="/notes">
 
         <div class="col-span-full">
           <label for="body" class="block text-sm font-medium leading-6 text-gray-900">Body</label>
@@ -49,7 +49,7 @@
 </div>
 
 
-<?php require('views/partials/footer.php') ?>
+<?php require base_path('views/partials/footer.php') ?>
 
 
 
