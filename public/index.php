@@ -2,6 +2,7 @@
 
 use Core\Database;
 
+session_start();
 
 
 const BASE_PATH = __DIR__ . '/../';
