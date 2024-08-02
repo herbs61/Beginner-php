@@ -41,10 +41,8 @@ function view($path, $attributes = [])
     require base_path('views/' . $path);   //this loading our view
 }
 
-function login($user)
+function redirect($path)
 {
-    $_SESSION['user'] = [
-        'email' => $user['email']
-    ];
-
+    header("location: {$path}");
+    exit();
 }

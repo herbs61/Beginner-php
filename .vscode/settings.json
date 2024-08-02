@@ -1,0 +1,6 @@
+{
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.inlineSuggest.suppressSuggestions": false,
+    "editor.suggest.localityBonus": true
+}
